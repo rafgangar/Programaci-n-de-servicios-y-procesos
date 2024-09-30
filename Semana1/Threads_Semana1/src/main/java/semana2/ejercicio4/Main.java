@@ -9,13 +9,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int objetivo = random.nextInt(11) + 10;
-        System.out.println("Intenta detener el contador cuando llegue al número: " + objetivo);
+        System.out.println("Pulsa enter cuando creas que el contador ha llegado a " + objetivo);
 
         Contador contador = new Contador();
         Thread hiloContador = new Thread(contador);
         hiloContador.start();
 
-        System.out.println("Presiona Enter para detener el contador...");
         scanner.nextLine();
 
         contador.detener();
@@ -30,9 +29,9 @@ public class Main {
         System.out.println("El contador se detuvo en: " + numeroFinal);
 
         if (numeroFinal == objetivo) {
-            System.out.println("¡Felicidades! Has detenido el contador en el número exacto.");
+            System.out.println("¡Lo has conseguido!");
         } else {
-            System.out.println("Lo siento, no fue el número correcto. El número objetivo era: " + objetivo);
+            System.out.println("Vuelve a intentarlo, has detenido el contador en: " + objetivo);
         }
     }
 }
