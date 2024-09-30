@@ -1,4 +1,4 @@
-package org.ejercicio2;
+package semana1.ejercicio2;
 
 import java.util.Scanner;
 

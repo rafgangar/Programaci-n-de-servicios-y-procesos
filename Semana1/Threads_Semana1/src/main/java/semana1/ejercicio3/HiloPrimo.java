@@ -1,4 +1,4 @@
-package org.ejercicio2;
+package semana1.ejercicio3;
 
 import java.util.Random;
 
